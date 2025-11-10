@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -26,8 +27,6 @@ public class User {
 
     @Column(name = "password_hash", nullable = false)
     private String passwordHash;
-
-    // --- Champs de profil (tous optionnels/nullable) ---
 
     @Column(name = "first_name")
     private String firstName;
@@ -54,7 +53,6 @@ public class User {
     @Column(name = "experience_level")
     private String experienceLevel;
 
-    // --- Relations inverses ---
     @OneToMany(mappedBy = "user")
     private Set<WorkSession> workSessions;
 }

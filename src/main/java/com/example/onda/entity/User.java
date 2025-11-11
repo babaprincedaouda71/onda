@@ -53,6 +53,4 @@ public class User {
     @Column(name = "experience_level")
     private String experienceLevel;
 
-    @OneToMany(mappedBy = "user")
-    private Set<WorkSession> workSessions;
 }

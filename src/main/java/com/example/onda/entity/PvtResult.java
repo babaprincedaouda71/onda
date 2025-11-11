@@ -18,8 +18,8 @@ public class PvtResult {
     private Long pvtId;
 
     @ManyToOne
-    @JoinColumn(name = "session_id", nullable = false)
-    private WorkSession workSession;
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 
     @Column(name = "test_timestamp")
     private LocalDateTime testTimestamp;

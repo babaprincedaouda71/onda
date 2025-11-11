@@ -19,8 +19,8 @@ public class Measurement {
     private Long measurementId;
 
     @ManyToOne
-    @JoinColumn(name = "session_id", nullable = false)
-    private WorkSession workSession;
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 
     @Column(name = "measurement_timestamp")
     private LocalDateTime measurementTimestamp;

@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class PvtResultDto {
     private Long pvtId;
-    private Long sessionId; // ID de la session de travail
+    private Long userId;
     private LocalDateTime testTimestamp;
     private Integer avgReactionTimeMs;
     private Integer lapseCount;

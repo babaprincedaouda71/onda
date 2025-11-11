@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class MeasurementDto {
     private Long measurementId;
-    private Long sessionId; // ID de la session de travail
+    private Long userId;
     private LocalDateTime measurementTimestamp;
     private String dataSource;
     private Integer heartRate;
